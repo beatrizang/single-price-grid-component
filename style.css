@@ -38,7 +38,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    top: 50%;
+    
     justify-content: center;
     align-items: center;
 }
@@ -135,4 +135,46 @@ button:hover{
 footer{
     color: var(--cyan);
     margin-top: 1em;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width:1260px){
+    .body{
+      width:80%;
+      position: relative;
+    }
+
+    .container{
+        margin-top: 15em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+
+    .boxes{
+        flex-direction: column;
+    }
+
+    .price{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .why-us{
+        width: 100%;
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    footer{
+        margin-bottom: 2em;
+    }
 }
